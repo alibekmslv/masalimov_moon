@@ -13,11 +13,13 @@
 @import "./components/menu-button";
 @import "./components/logo";
 @import "./components/input";
+@import "./components/heading";
 
 // Layout
 @import "./layout/main-header";
 @import "./layout/site-banner";
 @import "./layout/main-footer";
+@import "./layout/about-us";
 
 //State
 @import "./state/no-js.scss";
