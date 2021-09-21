@@ -1,0 +1,39 @@
+.contact-link {
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 21px;
+  display: flex;
+}
+
+.contact-link--phone {
+  .contact-link__svg {
+    margin-right: 18px;
+  }
+}
+
+.contact-link + .contact-link {
+  margin-left: 94px;
+}
+
+.contact-link__svg {
+  margin-right: 15px;
+}
+
+.contact-link__text {
+  color: $black;
+  opacity: 0.5;
+}
+
+@media (max-width: $desktop) {
+  .contact-link + .contact-link {
+    margin-left: 90px;
+  }
+}
+
+@media (max-width: $tablet) {
+  .contact-link + .contact-link {
+    margin-left: 0;
+    margin-top: 22px;
+  }
+}
+

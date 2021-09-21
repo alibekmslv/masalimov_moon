@@ -14,12 +14,14 @@
 @import "./components/logo";
 @import "./components/input";
 @import "./components/heading";
+@import "./components/contact-link";
 
 // Layout
 @import "./layout/main-header";
 @import "./layout/site-banner";
 @import "./layout/main-footer";
 @import "./layout/about-us";
+@import "./layout/company-address";
 
 //State
 @import "./state/no-js.scss";

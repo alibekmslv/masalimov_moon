@@ -1,4 +1,23 @@
 .main-footer {
-  margin-top: 160px;
-  padding-bottom: 72px;
+  margin-top: 40px;
+  padding-bottom: 98px;
+}
+
+.main-footer__wrapper {
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+@media (max-width: $tablet) {
+  .main-footer {
+    margin-top: 30px;
+    padding-bottom: 50px;
+  }
+
+  .main-footer__wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
 }

@@ -56,7 +56,8 @@
       <div class="site-banner__wrapper">
         <div class="site-banner__main">
           <a class="logo site-banner__logo" href="#">
-            <img class="logo__img" src="img/logo.svg" width="67" height="20" alt="Логотип сайта «Магазин Велосипедов»" />
+            <img class="logo__img" src="img/logo.svg" width="67" height="20"
+              alt="Логотип сайта «Магазин Велосипедов»" />
           </a>
           <h2 class="site-banner__title">Мы продаем
             велосипеды</h2>
@@ -87,11 +88,31 @@
         <li class="about-us__list-item">Профессиональные консультации!</li>
       </ol>
     </section>
+    <section class="company-address">
+      <h2 class="heading company-address__heading">Как нас найти?</h2>
+      <address class="company-address__address">Мы находимся по адресу: <br>Санкт-Петербург, ул. Большая Конюшенная, д.
+        19</address>
+      <iframe class="company-address__map"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426"
+        width="957" height="530" allowfullscreen title="Магазин «Moon» на карте"></iframe>
+    </section>
   </main>
   <footer class="main-footer">
-    <section class="main-footer__wrapper">
-      <h2 class="visually-hidden">Дополнительная информация о сайте</h2>
-    </section>
+    <h2 class="visually-hidden">Контактные данные</h2>
+    <div class="main-footer__wrapper">
+      <a class="contact-link" href="mailto:puteshestviemechta@gmail.ru">
+        <svg class="contact-link__svg" width="26" height="20">
+          <use xlink:href="img/sprite_auto.svg#icon-mail"></use>
+        </svg>
+        <span class="contact-link__text">puteshestviemechta@gmail.ru</span>
+      </a>
+      <a class="contact-link contact-link--phone" href="tel:+749978468446">
+        <svg class="contact-link__svg" width="14" height="21">
+          <use xlink:href="img/sprite_auto.svg#icon-phone"></use>
+        </svg>
+        <span class="contact-link__text">+7 (499) -784-684-46</span>
+      </a>
+    </div>
   </footer>
   <script src="js/script.js"></script>
 </body>

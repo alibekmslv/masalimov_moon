@@ -5,3 +5,15 @@
   letter-spacing: -0.005em;
   color: $heading-color;
 }
+
+@media (max-width: $desktop) {
+  .heading {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: $tablet) {
+  .heading {
+    font-size: 18px;
+  }
+}
