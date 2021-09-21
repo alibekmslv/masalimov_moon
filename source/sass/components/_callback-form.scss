@@ -1,0 +1,38 @@
+.callback-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.callback-form__title {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 28px;
+  text-align: center;
+  letter-spacing: -0.005em;
+  color: $white;
+}
+
+.callback-form__submit {
+  margin-top: 20px;
+  background-color: $submit-bg-color;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 21px;
+  border-width: 0;
+  border-radius: 6px;
+  padding-top: 16px;
+  padding-right: 0;
+  padding-bottom: 14px;
+  padding-left: 0;
+}
+
+@media (max-width: $desktop) {
+  .callback-form__title {
+    margin-bottom: 30px;
+    font-size: 18px;
+    text-align: center;
+    color: $black;
+  }
+}

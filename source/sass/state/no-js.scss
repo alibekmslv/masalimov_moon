@@ -1,0 +1,47 @@
+.no-js {
+  .tabs__list {
+    display: none;
+  }
+
+  .tabs__tabpanel {
+    display: block;
+    margin-bottom: 80px;
+  }
+
+  .modal {
+    margin-bottom: 30px;
+    margin-right: auto;
+    margin-left: auto;
+    position: static;
+    display: block;
+  }
+
+  .modal__close {
+    display: none;
+  }
+}
+
+@media (max-width: $desktop) {
+  .no-js {
+    .main-header {
+      position: static;
+      display: flex;
+      padding-top: 100px;
+      padding-bottom: 50px;
+      padding-left: 0;
+    }
+
+    .main-header__site-navigation {
+      display: block;
+      width: 100%;
+    }
+
+    .main-header__menu-button {
+      display: none;
+    }
+
+    .site-banner__logo {
+      position: static;
+    }
+  }
+}

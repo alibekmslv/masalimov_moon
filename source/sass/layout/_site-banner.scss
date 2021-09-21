@@ -1,0 +1,136 @@
+.site-banner {
+  min-height: 825px;
+  background-color: $site-banner-bg-color;
+  background-image: url("../img/backgrounds/site-banner.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/backgrounds/site-banner@2x.jpg");
+  }
+}
+
+.site-banner__wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 318px;
+  max-width: 880px;
+  margin: 0 auto;
+}
+
+.site-banner__logo {
+  display: block;
+  margin-bottom: 31px;
+}
+
+.site-banner__title {
+  margin-top: 0px;
+  margin-bottom: 24px;
+  max-width: 393px;
+  font-weight: 700;
+  font-size: 46px;
+  line-height: 64px;
+  letter-spacing: -0.005px;
+  color: $white;
+}
+
+.site-banner__text {
+  margin-top: 0;
+  margin-bottom: 0;
+  max-width: 381px;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 32px;
+  letter-spacing: -0.005em;
+  color: $white;
+  opacity: 0.8;
+}
+
+.site-banner__callback-form {
+  max-width: 327px;
+}
+
+@media (max-width: $desktop) {
+  $image-height: 390px;
+
+  .site-banner {
+    min-height: auto;
+    background-image: linear-gradient(to bottom, transparent $image-height, $white $image-height,  $white 100%),
+      url("../img/backgrounds/site-banner-tablet.jpg");
+    background-size: cover, contain;
+
+    @media (min-resolution: 2dppx) {
+      background-image: linear-gradient(to bottom, transparent $image-height, $white $image-height,  $white 100%),
+        url("../img/backgrounds/site-banner-tablet@2x.jpg");
+      background-size: cover, contain;
+    }
+  }
+
+  .site-banner__wrapper {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 134px;
+    max-width: auto;
+    margin: auto;
+  }
+
+  .site-banner__logo {
+    position: absolute;
+    top: 25px;
+    left: 21px;
+  }
+
+  .site-banner__title {
+    max-width: 525px;
+    margin: 0 auto 20px;
+    font-size: 30px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: -0.005em;
+  }
+
+  .site-banner__text {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 398px;
+    text-align: center;
+    font-size: 18px;
+  }
+
+  .site-banner__callback-form {
+    margin-top: 150px;
+  }
+}
+
+
+@media (max-width: $tablet) {
+  $image-height: 390px;
+
+  .site-banner {
+    background-image: linear-gradient(to bottom, transparent $image-height, $white $image-height,  $white 100%),
+      url("../img/backgrounds/site-banner-mobile.jpg");
+    background-size: cover, contain;
+
+    @media (min-resolution: 2dppx) {
+      background-image: linear-gradient(to bottom, transparent $image-height, $white $image-height,  $white 100%),
+        url("../img/backgrounds/site-banner-mobile@2x.jpg");
+      background-size: cover, contain;
+    }
+  }
+
+  .site-banner__title {
+    max-width: 288px;
+  }
+
+  .site-banner__text {
+    max-width: 288px;
+  }
+}
+
+@media (max-width: $tablet) {
+  .site-banner__callback-form {
+    margin-top: 140px;
+    max-width: 288px;
+  }
+}
