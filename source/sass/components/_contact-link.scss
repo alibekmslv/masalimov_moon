@@ -3,12 +3,31 @@
   font-size: 16px;
   line-height: 21px;
   display: flex;
+  fill: $accent;
+}
+
+.contact-link:hover {
+  .contact-link__svg{
+    fill: $accent-secondary;
+  }
+
+  .contact-link__text {
+    opacity: 0.8;
+  }
+
 }
 
 .contact-link--phone {
+  stroke-width: 2;
+  stroke: $accent;
+
   .contact-link__svg {
     margin-right: 18px;
   }
+}
+
+.contact-link--phone:hover .contact-link__svg {
+  stroke: $accent-secondary;
 }
 
 .contact-link + .contact-link {
@@ -25,15 +44,28 @@
 }
 
 @media (max-width: $desktop) {
+  .contact-link--phone {
+    .contact-link__svg {
+      width: 16px;
+      height: 23px;
+      margin-right: 16px;
+    }
+  }
+
   .contact-link + .contact-link {
-    margin-left: 90px;
+    margin-left: 94px;
   }
 }
 
 @media (max-width: $tablet) {
+  .contact-link--phone {
+    .contact-link__svg {
+      margin-right: 18px;
+    }
+  }
+
   .contact-link + .contact-link {
     margin-left: 0;
-    margin-top: 22px;
+    margin-top: 24px;
   }
 }
-

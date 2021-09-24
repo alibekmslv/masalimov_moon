@@ -48,11 +48,12 @@
 }
 
 .site-banner__callback-form {
-  max-width: 327px;
+  margin-top: 4px;
+  max-width: 326px;
 }
 
 @media (max-width: $desktop) {
-  $image-height: 390px;
+  $image-height: 340px;
 
   .site-banner {
     min-height: auto;
@@ -100,6 +101,7 @@
 
   .site-banner__callback-form {
     margin-top: 150px;
+    max-width: 322px;
   }
 }
 
@@ -129,6 +131,14 @@
 }
 
 @media (max-width: $tablet) {
+  .site-banner__wrapper {
+    padding-top: 120px;
+  }
+
+  .site-banner__logo {
+    left: 17px;
+  }
+
   .site-banner__callback-form {
     margin-top: 140px;
     max-width: 288px;

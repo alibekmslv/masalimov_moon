@@ -4,20 +4,29 @@
 }
 
 .main-footer__wrapper {
-  margin: 0 auto;
+  margin-top: 0;
+  margin-left: -18px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 
+@media (max-width: $desktop) {
+  .main-footer {
+    margin-top: 22px;
+    padding-bottom: 55px;
+  }
+}
+
 @media (max-width: $tablet) {
   .main-footer {
-    margin-top: 30px;
+    margin-top: 33px;
     padding-bottom: 50px;
   }
 
   .main-footer__wrapper {
     flex-direction: column;
     align-items: center;
+    margin-left: 0;
   }
 }

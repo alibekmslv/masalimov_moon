@@ -1,7 +1,5 @@
 .main-header {
   display: grid;
-  margin-left: auto;
-  margin-right: auto;
   padding-top: 21px;
   padding-bottom: 9px;
   width: 880px;
@@ -10,6 +8,8 @@
   border-bottom-color: $main-header-border-bottom-color;
   background-color: transparent;
   position: absolute;
+  left: 50%;
+  transform: translate(-50%);
 }
 
 .main-header__menu-button {
@@ -22,6 +22,8 @@
     padding-top: 0;
     padding-bottom: 0;
     border-bottom-width: 0;
+    left: initial;
+    transform: initial;
   }
 
   .main-header--open {
@@ -45,11 +47,6 @@
 
   .main-header__site-navigation {
     display: none;
-    // margin-top: 0;
-    // margin-right: 0;
-    // margin-left: 0;
-    // flex-grow: 1;
-    // padding-left: 0;
   }
 
   .main-header__menu-button {
@@ -63,7 +60,7 @@
 @media (max-width: $tablet) {
   .main-header--open {
     display: flex;
-    padding-top: 134px;
+    padding-top: 100px;
     padding-left: 0;
     height: 100vh;
   }

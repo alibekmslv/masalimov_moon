@@ -3,13 +3,16 @@ $ghost: #c9ccd4;
 $cod-gray: #1c1c1c;
 $abbey: #48494d;
 $bright-turquoise: #0ad9c6;
+$niagara: #08a797;
 $wild-sand: #f6f6f6;
 $white: #ffffff;
 $white-20: #ffffff33;
 $mine-shaft: #1f1f1f;
+$woodsmoke: #131314;
+$athens-gray: #f6f7f9;
 
 // Background's fallback colors
-$site-banner-bg-color: #1f1f1f;
+$site-banner-bg-color: $mine-shaft;
 
 // Purpose
 $main-header-border-bottom-color: $white-20;
@@ -25,3 +28,10 @@ $menu-button-open-bg: $white;
 $heading-color: $mine-shaft;
 $list-item-counter-color: $bright-turquoise;
 $bikes-category-figures-color: $bright-turquoise;
+$bike-types-bg-color: $athens-gray;
+$bikes-video-bg: $woodsmoke;
+$site-navigation-link-hover-color: $bright-turquoise;
+$input-hover-border-color: $bright-turquoise;
+$form-submit-button-hover-bg-color: $niagara;
+$accent: $bright-turquoise;
+$accent-secondary: $niagara;

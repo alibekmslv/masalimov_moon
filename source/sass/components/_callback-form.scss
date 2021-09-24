@@ -1,4 +1,4 @@
-.callback-form {
+.callback-form form {
   display: flex;
   flex-direction: column;
 }
@@ -14,7 +14,7 @@
   color: $white;
 }
 
-.callback-form__submit {
+.callback-form button[type="submit"] {
   margin-top: 20px;
   background-color: $submit-bg-color;
   font-weight: 600;
@@ -26,6 +26,11 @@
   padding-right: 0;
   padding-bottom: 14px;
   padding-left: 0;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $form-submit-button-hover-bg-color;
+  }
 }
 
 @media (max-width: $desktop) {
@@ -34,5 +39,11 @@
     font-size: 18px;
     text-align: center;
     color: $black;
+  }
+}
+
+@media (max-width: $tablet) {
+  .callback-form__title {
+    margin-bottom: 20px;
   }
 }

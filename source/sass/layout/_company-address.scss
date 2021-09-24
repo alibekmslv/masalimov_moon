@@ -1,6 +1,6 @@
 .company-address__heading {
   margin-top: 0;
-  margin-bottom: 50px;
+  margin-bottom: 28px;
   text-align: center;
 }
 
@@ -41,9 +41,13 @@
 }
 
 @media (max-width: $tablet) {
+  .company-address__heading {
+    font-size: 18px;
+  }
+
   .company-address__address {
     max-width: 288px;
-    margin-bottom: 25px;
+    margin-bottom: 18px;
 
     br {
       display: block;

@@ -1,7 +1,9 @@
 .site-navigation__list {
-  display: flex;
+  margin-left: 22px;
+  margin-right: 25px;
+  display: grid;
+  grid-template-columns: repeat(4, auto);
   justify-content: space-between;
-  flex-wrap: wrap;
   margin-top: 0;
   margin-bottom: 0;
   padding-left: 0;
@@ -15,6 +17,10 @@
   color: $site-navigation-link;
   text-decoration: none;
   opacity: 0.7;
+
+  &:hover {
+    color: $site-navigation-link-hover-color;
+  }
 }
 
 .site-navigation__svg {
@@ -23,6 +29,10 @@
 
 @media (max-width: $desktop) {
   .site-navigation__list {
+    margin-left: 0;
+    margin-right: 0;
+    display: flex;
+    justify-content: stretch;
     flex-direction: column;
     flex-wrap: nowrap;
   }
