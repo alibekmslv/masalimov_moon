@@ -7,14 +7,13 @@
 }
 
 .contact-link:hover {
-  .contact-link__svg{
+  .contact-link__svg {
     fill: $accent-secondary;
   }
 
   .contact-link__text {
     opacity: 0.8;
   }
-
 }
 
 .contact-link--phone {

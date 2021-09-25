@@ -25,7 +25,7 @@
 }
 
 .site-banner__title {
-  margin-top: 0px;
+  margin-top: 0;
   margin-bottom: 24px;
   max-width: 393px;
   font-weight: 700;
@@ -57,12 +57,12 @@
 
   .site-banner {
     min-height: auto;
-    background-image: linear-gradient(to bottom, transparent $image-height, $white $image-height,  $white 100%),
+    background-image: linear-gradient(to bottom, transparent $image-height, $white $image-height, $white 100%),
       url("../img/backgrounds/site-banner-tablet.jpg");
     background-size: cover, contain;
 
     @media (min-resolution: 2dppx) {
-      background-image: linear-gradient(to bottom, transparent $image-height, $white $image-height,  $white 100%),
+      background-image: linear-gradient(to bottom, transparent $image-height, $white $image-height, $white 100%),
         url("../img/backgrounds/site-banner-tablet@2x.jpg");
       background-size: cover, contain;
     }
@@ -110,12 +110,12 @@
   $image-height: 390px;
 
   .site-banner {
-    background-image: linear-gradient(to bottom, transparent $image-height, $white $image-height,  $white 100%),
+    background-image: linear-gradient(to bottom, transparent $image-height, $white $image-height, $white 100%),
       url("../img/backgrounds/site-banner-mobile.jpg");
     background-size: cover, contain;
 
     @media (min-resolution: 2dppx) {
-      background-image: linear-gradient(to bottom, transparent $image-height, $white $image-height,  $white 100%),
+      background-image: linear-gradient(to bottom, transparent $image-height, $white $image-height, $white 100%),
         url("../img/backgrounds/site-banner-mobile@2x.jpg");
       background-size: cover, contain;
     }
