@@ -42,7 +42,7 @@
         </li>
       </ul>
     </nav>
-    <button class="menu-button main-header__menu-button" aria-label="Меню">
+    <button type="button" class="menu-button main-header__menu-button" aria-label="Меню">
       <svg class="menu-button__svg" width="30" height="30" aria-hidden="true" focusable="false">
         <use class="menu-button__menu" xlink:href="img/sprite_auto.svg#icon-menu"></use>
         <use class="menu-button__cross" xlink:href="img/sprite_auto.svg#icon-menu-close"></use>
@@ -94,9 +94,13 @@
         <li class="bikes-category-list__item">
           <a href="#">
             <picture>
+              <!-- 1x: 270px; 2x: 540px -->
               <source type="image/webp" media="(max-width: 1023px)" srcset="img/content/bike-city-tablet.webp 1x, img/content/bike-city-tablet@2x.webp 2x">
+              <!-- 1x: 342px; 2x: 684px -->
               <source type="image/webp" srcset="img/content/bike-city.webp 1x, img/content/bike-city@2x.webp 2x">
+              <!-- 1x: 270px; 2x: 540px -->
               <source media="(max-width: 1023px)" srcset="img/content/bike-city-tablet.jpg 1x, img/content/bike-city-tablet@2x.jpg 2x">
+              <!-- 1x: 342px; 2x: 684px -->
               <img src="img/content/bike-city.jpg" srcset="img/content/bike-city@2x.jpg 2x" width="342" height="503" alt="Городской велосипед у стены с плющем">
             </picture>
             <p>Дорожный велосипед</p>
@@ -105,9 +109,13 @@
         <li class="bikes-category-list__item">
           <a href="#">
             <picture>
+              <!-- 1x: 270px; 2x: 540px -->
               <source type="image/webp" media="(max-width: 1023px)" srcset="img/content/bike-mountain-tablet.webp 1x, img/content/bike-mountain-tablet@2x.webp 2x">
+              <!-- 1x: 342px; 2x: 684px -->
               <source type="image/webp" srcset="img/content/bike-mountain.webp 1x, img/content/bike-mountain@2x.webp 2x">
+              <!-- 1x: 270px; 2x: 540px -->
               <source media="(max-width: 1023px)" srcset="img/content/bike-mountain-tablet.jpg 1x, img/content/bike-mountain-tablet@2x.jpg 2x">
+              <!-- 1x: 342px; 2x: 684px -->
               <img src="img/content/bike-mountain.jpg" srcset="img/content/bike-mountain@2x.jpg 2x" width="342" height="566" alt="Горный велосипед на фоне в гористой местности на закате">
             </picture>
             <p>Горный велосипед</p>
@@ -116,9 +124,13 @@
         <li class="bikes-category-list__item">
           <a href="#">
             <picture>
+              <!-- 1x: 270px; 2x: 540px -->
               <source type="image/webp" media="(max-width: 1023px)" srcset="img/content/bike-child-tablet.webp 1x, img/content/bike-child-tablet@2x.webp 2x">
+              <!-- 1x: 342px; 2x: 684px -->
               <source type="image/webp" srcset="img/content/bike-child.webp 1x, img/content/bike-child@2x.webp 2x">
+              <!-- 1x: 270px; 2x: 540px -->
               <source media="(max-width: 1023px)" srcset="img/content/bike-child-tablet.jpg 1x, img/content/bike-child-tablet@2x.jpg 2x">
+              <!-- 1x: 342px; 2x: 684px -->
               <img src="img/content/bike-child.jpg" srcset="img/content/bike-child@2x.jpg 2x" width="342" height="513" alt="Розовый детский велосипед у стены дома">
             </picture>
             <p>Детский велосипед</p>
@@ -132,14 +144,20 @@
       </p>
       <div class="video-preview bikes-video__video-preview">
         <picture>
+          <!-- 1x: 288px; 2x: 576px -->
           <source type="image/webp" media="(max-width: 767px)" srcset="img/content/video-preview-mobile.webp 1x, img/content/video-preview-mobile@2x.webp 2x">
+          <!-- 1x: 503px; 2x: 1006px -->
           <source type="image/webp" media="(max-width: 1023px)" srcset="img/content/video-preview-tablet.webp 1x, img/content/video-preview-tablet@2x.webp 2x">
+          <!-- 1x: 929px; 2x: 1858px -->
           <source type="image/webp" srcset="img/content/video-preview.webp 1x, img/content/video-preview@2x.webp 2x">
+          <!-- 1x: 288px; 2x: 576px -->
           <source media="(max-width: 767px)" srcset="img/content/video-preview-mobile.jpg 1x, img/content/video-preview-mobile@2x.jpg 2x">
+          <!-- 1x: 503px; 2x: 1006px -->
           <source media="(max-width: 1023px)" srcset="img/content/video-preview-tablet.jpg 1x, img/content/video-preview-tablet@2x.jpg 2x">
+          <!-- 1x: 929px; 2x: 1858px -->
           <img class="video-preview__img" src="img/content/video-preview.jpg" srcset="img/content/video-preview@2x.jpg 2x" width="929" height="522" alt="Черный профессиональный велосипед на черном фоне">
         </picture>
-        <button class="video-preview__play-button">
+        <button type="button" class="video-preview__play-button">
           <svg class="video-preview__svg" width="65" height="65">
             <use xlink:href="img/sprite_auto.svg#icon-play-button"></use>
           </svg>

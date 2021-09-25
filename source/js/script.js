@@ -1,7 +1,5 @@
 'use strict';
 
-const TEL_LENGHT = 10;
-
 const noJsElement = document.querySelector('.no-js');
 if (noJsElement) {
   noJsElement.classList.remove('no-js');
@@ -24,17 +22,14 @@ if (mainHeaderElement) {
         e.preventDefault();
         mainHeaderElement.classList.remove('main-header--open');
         menuButtonElement.classList.remove('menu-button--open');
-        document.querySelector(e.target.hash).scrollIntoView({ behavior: 'smooth', block: 'start', inline: 'nearest' });
+        document.querySelector(e.target.hash).scrollIntoView({behavior: 'smooth', block: 'start', inline: 'nearest'});
       }
     });
   }
 }
 
-
 // Form Related Vars
 const callbackFormElement = document.querySelector('.callback-form');
-
-
 
 // Form Validation
 const checkPhoneValidity = (phoneElement) => {
@@ -62,11 +57,11 @@ if (callbackFormElement) {
   const callbackFormUserNameElement = callbackFormElement.querySelector('[name="name"]');
 
   if (callbackFormPhoneElement && callbackFormUserNameElement) {
-    callbackFormPhoneElement.addEventListener('input', (e) => {
+    callbackFormPhoneElement.addEventListener('input', () => {
       checkPhoneValidity(callbackFormPhoneElement);
     });
 
-    callbackFormUserNameElement.addEventListener('input', (e) => {
+    callbackFormUserNameElement.addEventListener('input', () => {
       checkTextValidity(callbackFormUserNameElement);
     });
   }
