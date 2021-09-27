@@ -57,12 +57,22 @@ if (callbackFormElement) {
   const callbackFormUserNameElement = callbackFormElement.querySelector('[name="name"]');
 
   if (callbackFormPhoneElement && callbackFormUserNameElement) {
-    callbackFormPhoneElement.addEventListener('input', () => {
+    callbackFormPhoneElement.value = localStorage.getItem('callbackPhoneNumber');
+    callbackFormUserNameElement.value = localStorage.getItem('callbackUserName');
+
+    callbackFormPhoneElement.addEventListener('input', (e) => {
       checkPhoneValidity(callbackFormPhoneElement);
+      localStorage.setItem('callbackPhoneNumber', e.target.value);
     });
 
-    callbackFormUserNameElement.addEventListener('input', () => {
+    callbackFormUserNameElement.addEventListener('input', (e) => {
       checkTextValidity(callbackFormUserNameElement);
+      localStorage.setItem('callbackUserName', e.target.value);
     });
   }
+
+  callbackFormElement.addEventListener('submit', () => {
+    localStorage.setItem('callbackPhoneNumber', '');
+    localStorage.setItem('callbackUserName', '');
+  });
 }

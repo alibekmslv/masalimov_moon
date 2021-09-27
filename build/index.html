@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Магазин велосипедов</title>
-  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="css/style.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <link href="fonts/OpenSans-Regular.woff2" as="font" rel="preload" crossorigin="anonymous">
   <link href="fonts/OpenSans-SemiBold.woff2" as="font" rel="preload" crossorigin="anonymous">
   <link href="fonts/OpenSans-Bold.woff2" as="font" rel="preload" crossorigin="anonymous">
@@ -63,7 +63,7 @@
         </div>
         <div class="callback-form site-banner__callback-form">
           <p class="callback-form__title">Заполните поля ниже и мы подберем велосипед Вашей мечты</p>
-          <form method="POST" action="#" autocomplete="off">
+          <form method="POST" action="https://echo.htmlacademy.ru/" autocomplete="off">
             <div class="input">
               <label class="visually-hidden" for="user-name">Имя</label>
               <input id="user-name" name="name" type="text" placeholder="Введите Ваше Имя" required="">
@@ -71,7 +71,7 @@
             </div>
             <div class="input">
               <label class="visually-hidden" for="user-phone">Номер телефона</label>
-              <input id="user-phone" name="phone" type="tel" placeholder="Введите Ваш номер телефона" pattern="^[0-9]*$" required="">
+              <input id="user-phone" name="phone" type="tel" placeholder="Введите Ваш номер телефона" pattern="^(\+|7|8)[0-9()-]*$" required="">
               <span>Данные не верны</span>
             </div>
             <button type="submit">Подобрать велосипед мечты</button>
