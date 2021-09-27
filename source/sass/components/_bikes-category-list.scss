@@ -1,9 +1,10 @@
 .bikes-category-list {
   margin: 0 auto;
-  padding-left: 0;
+  padding-left: 60px;
+  padding-right: 60px;
   list-style-type: none;
-  display: grid;
-  grid-template-columns: repeat(3, min-content);
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
 }
 
@@ -113,6 +114,8 @@
     flex-wrap: wrap;
     justify-content: center;
     max-width: 590px;
+    padding-right: 0;
+    padding-left: 0;
   }
 
   .bikes-category-list img {
