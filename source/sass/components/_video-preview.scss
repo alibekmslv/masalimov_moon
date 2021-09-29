@@ -42,9 +42,16 @@
 }
 
 @media (max-width: $tablet) {
+  .video-preview {
+    display: block;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
   .video-preview__img {
-    width: 288px;
-    height: 162px;
+    display: block;
+    width: 100%;
+    height: auto;
   }
 
   .video-preview__svg {

@@ -29,10 +29,6 @@
   stroke: $accent-secondary;
 }
 
-.contact-link + .contact-link {
-  margin-left: 94px;
-}
-
 .contact-link__svg {
   margin-right: 15px;
 }
@@ -50,10 +46,6 @@
       margin-right: 16px;
     }
   }
-
-  .contact-link + .contact-link {
-    margin-left: 94px;
-  }
 }
 
 @media (max-width: $tablet) {
@@ -61,10 +53,5 @@
     .contact-link__svg {
       margin-right: 18px;
     }
-  }
-
-  .contact-link + .contact-link {
-    margin-left: 0;
-    margin-top: 24px;
   }
 }

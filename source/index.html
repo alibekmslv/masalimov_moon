@@ -5,15 +5,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="Магазин велосипедов «Moon»">
   <title>Магазин велосипедов</title>
-  <link rel="preload" href="css/style.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="stylesheet" href="css/style.min.css">
   <link href="fonts/OpenSans-Regular.woff2" as="font" rel="preload" crossorigin="anonymous">
   <link href="fonts/OpenSans-SemiBold.woff2" as="font" rel="preload" crossorigin="anonymous">
   <link href="fonts/OpenSans-Bold.woff2" as="font" rel="preload" crossorigin="anonymous">
 </head>
 
 <body class="page-body">
-  <header class="main-header"><!-- main-header--open -->
+  <header class="main-header">
+    <!-- main-header--open -->
     <nav class="site-navigation main-header__site-navigation">
       <ul class="site-navigation__list">
         <li class="site-navigation__item">
@@ -54,7 +56,7 @@
     <section class="site-banner">
       <div class="site-banner__wrapper">
         <div class="site-banner__main">
-          <a class="logo site-banner__logo" href="#">
+          <a class="logo site-banner__logo">
             <img class="logo__img" src="img/logo.svg" width="67" height="20"
               alt="Логотип сайта «Магазин Велосипедов»" />
           </a>
@@ -72,7 +74,8 @@
             </div>
             <div class="input">
               <label class="visually-hidden" for="user-phone">Номер телефона</label>
-              <input id="user-phone" name="phone" type="tel" placeholder="Введите Ваш номер телефона" pattern="^(\+|7|8)[0-9()-]*$" required>
+              <input id="user-phone" name="phone" type="tel" placeholder="Введите Ваш номер телефона"
+                pattern="^(\+|7|8)[0-9()-]*$" required>
               <span>Данные не верны</span>
             </div>
             <button type="submit">Подобрать велосипед мечты</button>
@@ -104,8 +107,7 @@
               <source media="(max-width: 1023px)"
                 srcset="img/content/bike-city-tablet.jpg 1x, img/content/bike-city-tablet@2x.jpg 2x">
               <!-- 1x: 342px; 2x: 684px -->
-              <img src="img/content/bike-city.jpg"
-                srcset="img/content/bike-city@2x.jpg 2x" width="342" height="503"
+              <img src="img/content/bike-city.jpg" srcset="img/content/bike-city@2x.jpg 2x" width="342" height="503"
                 alt="Городской велосипед у стены с плющем" />
             </picture>
             <p>Дорожный велосипед</p>
@@ -118,14 +120,14 @@
               <source type="image/webp" media="(max-width: 1023px)"
                 srcset="img/content/bike-mountain-tablet.webp 1x, img/content/bike-mountain-tablet@2x.webp 2x">
               <!-- 1x: 342px; 2x: 684px -->
-              <source type="image/webp" srcset="img/content/bike-mountain.webp 1x, img/content/bike-mountain@2x.webp 2x">
+              <source type="image/webp"
+                srcset="img/content/bike-mountain.webp 1x, img/content/bike-mountain@2x.webp 2x">
               <!-- 1x: 270px; 2x: 540px -->
               <source media="(max-width: 1023px)"
                 srcset="img/content/bike-mountain-tablet.jpg 1x, img/content/bike-mountain-tablet@2x.jpg 2x">
               <!-- 1x: 342px; 2x: 684px -->
-              <img src="img/content/bike-mountain.jpg"
-                srcset="img/content/bike-mountain@2x.jpg 2x" width="342" height="566"
-                alt="Горный велосипед на фоне в гористой местности на закате" />
+              <img src="img/content/bike-mountain.jpg" srcset="img/content/bike-mountain@2x.jpg 2x" width="342"
+                height="566" alt="Горный велосипед на фоне в гористой местности на закате" />
             </picture>
             <p>Горный велосипед</p>
           </a>
@@ -142,8 +144,7 @@
               <source media="(max-width: 1023px)"
                 srcset="img/content/bike-child-tablet.jpg 1x, img/content/bike-child-tablet@2x.jpg 2x">
               <!-- 1x: 342px; 2x: 684px -->
-              <img src="img/content/bike-child.jpg"
-                srcset="img/content/bike-child@2x.jpg 2x" width="342" height="513"
+              <img src="img/content/bike-child.jpg" srcset="img/content/bike-child@2x.jpg 2x" width="342" height="513"
                 alt="Розовый детский велосипед у стены дома" />
             </picture>
             <p>Детский велосипед</p>
@@ -176,7 +177,7 @@
             srcset="img/content/video-preview@2x.jpg 2x" width="929" height="522"
             alt="Черный профессиональный велосипед на черном фоне" />
         </picture>
-        <button type="button" class="video-preview__play-button">
+        <button type="button" class="video-preview__play-button" aria-label="Воспроизвести видео">
           <svg class="video-preview__svg" width="65" height="65">
             <use xlink:href="img/sprite_auto.svg#icon-play-button"></use>
           </svg>
@@ -190,6 +191,23 @@
       <iframe class="company-address__map"
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426"
         width="957" height="530" allowfullscreen title="Магазин «Moon» на карте"></iframe>
+      <picture>
+        <!-- 1x: 320px; 2x: 640px -->
+        <source type="image/webp" media="(max-width: 767px)"
+          srcset="img/content/map-mobile.webp 1x, img/content/map-mobile@2x.webp 2x">
+        <!-- 1x: 698px; 2x: 1396px -->
+        <source type="image/webp" media="(max-width: 1023px)"
+          srcset="img/content/map-tablet.webp 1x, img/content/map-tablet@2x.webp 2x">
+        <!-- 1x: 957px; 2x: 1914px -->
+        <source type="image/webp" srcset="img/content/map.webp 1x, img/content/map@2x.webp 2x">
+        <!-- 1x: 320px; 2x: 640px -->
+        <source media="(max-width: 767px)" srcset="img/content/map-mobile.jpg 1x, img/content/map-mobile@2x.jpg 2x">
+        <!-- 1x: 698px; 2x: 1396px -->
+        <source media="(max-width: 1023px)" srcset="img/content/map-tablet.jpg 1x, img/content/map-tablet@2x.jpg 2x">
+        <!-- 1x: 957px; 2x: 1914px -->
+        <img class="company-address__image-map" src="img/content/map.jpg" srcset="img/content/map@2x.jpg 2x" width="957"
+          height="530" alt="Магазин «Moon» на карте" />
+      </picture>
     </section>
   </main>
   <footer class="main-footer">

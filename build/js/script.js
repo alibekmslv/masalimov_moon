@@ -15,6 +15,7 @@ if (mainHeaderElement) {
     menuButtonElement.addEventListener('click', () => {
       mainHeaderElement.classList.toggle('main-header--open');
       menuButtonElement.classList.toggle('menu-button--open');
+      document.body.classList.toggle('page-body--lock');
     });
 
     mainHeaderElement.addEventListener('click', (e) => {

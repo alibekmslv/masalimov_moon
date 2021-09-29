@@ -9,6 +9,12 @@ body {
   min-height: 100%;
 }
 
+.page-body--lock {
+  overflow-y: scroll;
+  position: fixed;
+  block-size: 100%;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;

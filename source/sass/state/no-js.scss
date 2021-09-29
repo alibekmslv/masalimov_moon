@@ -19,6 +19,14 @@
   .modal__close {
     display: none;
   }
+
+  .company-address__map {
+    display: none;
+  }
+
+  .company-address__image-map {
+    display: block;
+  }
 }
 
 @media (max-width: $desktop) {
