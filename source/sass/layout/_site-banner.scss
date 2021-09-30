@@ -72,7 +72,7 @@
     flex-direction: column;
     align-items: center;
     padding-top: 134px;
-    max-width: auto;
+    max-width: none;
     margin: auto;
   }
 
@@ -112,12 +112,12 @@
   .site-banner {
     background-image: linear-gradient(to bottom, transparent $image-height, $white $image-height, $white 100%),
       url("../img/backgrounds/site-banner-mobile.jpg");
-    background-size: cover, contain;
+    background-size: cover, 100%;
 
     @media (min-resolution: 2dppx) {
       background-image: linear-gradient(to bottom, transparent $image-height, $white $image-height, $white 100%),
         url("../img/backgrounds/site-banner-mobile@2x.jpg");
-      background-size: cover, contain;
+      background-size: cover, 100%;
     }
   }
 
